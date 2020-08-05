@@ -1,0 +1,1162 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #000000;
+}
+
+button,
+a,
+textarea,
+input:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+}
+
+/*Шапка сайта*/
+header {
+  margin: 20px auto;
+}
+
+.logo {
+  font-size: 16px;
+  /* position: relative; */
+}
+
+.logo > a > img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  min-height: 66px;
+}
+
+.logo > p {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+/* .logo p {
+    position: absolute;
+    left: 91px;
+    top: 0;
+} */
+
+/* .header-text_2 {
+    padding-top: 10px 0;
+    color: #666666;
+    text-align: center;
+} */
+
+.header-text_2 {
+  display: table;
+  width: 100%;
+  min-height: 81px;
+  text-align: center;
+}
+
+.header-text_2 div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-phone {
+  text-align: right;
+}
+
+.phone {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+}
+
+.phone:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Секция с заголовкой и формой*/
+.heading-page {
+  background: url(../img/main-bg.png) center center no-repeat;
+  background-size: cover;
+}
+
+.heading-page h1 {
+  font-size: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 120px;
+  margin-bottom: 78px;
+  line-height: 45px;
+}
+
+.heading-page_list p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  float: left;
+  width: 90%;
+}
+
+.heading-page_list::before {
+  content: "";
+  position: relative;
+  margin-right: 14px;
+  background: url(../img/time.png) no-repeat center;
+  float: left;
+  width: 5%;
+  height: 20px;
+  bottom: -3px;
+}
+
+.main-form {
+  margin: 50px auto;
+  padding: 25px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.main-form_header {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main-form_text {
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+
+.main-form_input {
+  display: block;
+  border: 1px solid #848484;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  padding: 10px 0;
+}
+
+.main-form_input::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 13px;
+  color: #6d6d6d;
+}
+
+.textarea {
+  height: 100px;
+}
+
+.main-form_btn {
+  width: 100%;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 18px 34px;
+  background-color: #e10205;
+  color: #fff;
+  font-size: 15px;
+  background: linear-gradient(to top, #ab0509, #e80204);
+}
+
+.main-form_btn:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to top, #ab0509, #e80204);
+}
+
+small {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #848484;
+}
+
+/*Секция с преимуществами*/
+.features {
+  text-align: center;
+  padding-bottom: 89px;
+}
+
+.features-header {
+  margin: 81px auto;
+  font-size: 30px;
+}
+
+.features-block h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  margin: 41px auto 29px;
+}
+
+.features-block_text {
+  line-height: 18px;
+  font-size: 15px;
+  color: #4d4d4d;
+}
+
+/* Секция с нашими услугами */
+
+.services {
+  background: url(../img/bg-features.png) center;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 135px;
+}
+
+.services-header {
+  font-size: 30px;
+  margin: 82px auto 31px;
+}
+
+.services-text {
+  margin-bottom: 99px;
+  font-size: 16px;
+}
+
+.services-block {
+  height: 530px;
+}
+
+.services-block_img {
+  width: 237px;
+  margin: auto;
+  padding: 19px 0;
+  background: #fff;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.services-block_img img {
+  width: 180px;
+  height: 250px;
+}
+
+.services-block_text {
+  margin: 31px auto 23px;
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 50px;
+}
+
+.services-block_price {
+  display: block;
+  font-size: 29px;
+  margin-bottom: 29px;
+}
+
+.services-block_btn {
+  display: block;
+  width: 250px;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 16px 50px;
+  background: linear-gradient(to top, #ab0509, #e80204);
+  background-color: #e10205;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin: auto;
+  bottom: 0;
+}
+
+.services-block_btn:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.row2 {
+  margin-top: 80px;
+}
+
+/* Секция с Списоком требуемых документов */
+.requires {
+  padding: 80px 80px;
+  background: url(../img/bg-required.png) center;
+  text-align: center;
+}
+
+.requires-header {
+  font-size: 30px;
+  margin-bottom: 82px;
+}
+
+.requires h3 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.requires-list {
+  font-size: 18px;
+  text-align: left;
+}
+
+.requires-list p {
+  float: left;
+  width: 95%;
+}
+
+.requires-list::before {
+  content: "";
+  background: url(../img/red-circle.png) center no-repeat;
+  margin-right: 15px;
+  position: relative;
+  float: left;
+  width: 1%;
+  height: 10px;
+  bottom: -7px;
+}
+
+.trigger {
+  clear: both;
+  margin-top: 21px;
+  padding: 20px 21px;
+  font-size: 14px;
+  border: 2px solid red;
+  font-weight: bold;
+}
+
+.auxiliary {
+  clear: both;
+  padding: 3px 0;
+}
+
+/* Секция с -  Как мы работаем */
+.works {
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.works h2 {
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+.works h3 {
+  font-size: 18px;
+  margin: 41px auto 34px;
+  font-weight: bold;
+}
+
+.works-text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.ellips-left {
+  display: table;
+  width: 100%;
+  background: url(../img/ellips-left.png) center no-repeat;
+  min-height: 80px;
+}
+
+.ellips-down {
+  display: table;
+  width: 100%;
+  background: url(../img/ellips-down.png) center no-repeat;
+  min-height: 80px;
+}
+
+.ellips-right {
+  display: table;
+  width: 100%;
+  background: url(../img/ellips-right.png) center no-repeat;
+  min-height: 80px;
+}
+
+.wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.ellips-up {
+  display: table;
+  width: 100%;
+  background: url(../img/ellips-up.png) center no-repeat;
+  min-height: 80px;
+}
+
+/* Секция с -  6 причин выбрать именно нас */
+
+.super {
+  padding: 80px 80px;
+  text-align: center;
+  background: url(../img/bg-super.png) center;
+}
+
+.super h2 {
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+.super-wrap {
+  text-align: left;
+}
+
+.super-wrap_block {
+  width: 80%;
+  float: left;
+}
+
+.super-wrap::before {
+  content: "";
+  margin-right: 30px;
+  float: left;
+  width: 10%;
+  height: 40px;
+  position: relative;
+  bottom: -17px;
+}
+
+.super-wrap1::before {
+  background: url(../img/question.png) center no-repeat;
+}
+
+.super-wrap2::before {
+  background: url(../img/coin.png) center no-repeat;
+}
+
+.super-wrap3::before {
+  background: url(../img/etiket.png) center no-repeat;
+}
+
+.super-wrap4::before {
+  background: url(../img/akt.png) center no-repeat;
+}
+
+.super-wrap5::before {
+  background: url(../img/pay.png) center no-repeat;
+}
+
+.super-wrap6::before {
+  background: url(../img/lamp.png) center no-repeat;
+}
+
+.super-wrap h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.super-text {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+/* Секция  -  Клиенты о нас */
+.customers {
+  text-align: center;
+}
+
+.customers h2 {
+  margin-bottom: 80px;
+  font-size: 30px;
+}
+
+.customers-block {
+  text-align: center;
+  height: 308px;
+}
+
+.customers-block img {
+  display: block;
+  margin: 0 auto;
+}
+
+.slick-active {
+  outline: none;
+}
+
+button.slick-prev.slick-arrow::before {
+  content: "";
+  background: url(../img/left-arrow.png) center no-repeat;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+button.slick-next.slick-arrow::before {
+  content: "";
+  background: url(../img/right-arrow.png) center no-repeat;
+  float: right;
+  width: 40px;
+  height: 40px;
+}
+
+/* .slick-track::before {
+  content: "";
+  background: url(../img/left-arrow.png) center no-repeat;
+  float: left;
+  width: 20px;
+  height: 20px;
+} */
+
+.partners {
+  text-align: center;
+}
+
+.partners h3 {
+  font-size: 30px;
+  margin: 80px auto;
+}
+
+.partners img {
+  margin-bottom: 80px;
+}
+
+/* Секция  -  О нашей компании */
+.company {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.company h2 {
+  margin: 76px 84px;
+  font-size: 30px;
+}
+
+.company-block {
+  text-align: left;
+}
+
+.company-block p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.company-text {
+  text-align: left;
+}
+
+.company-text_main {
+  font-size: 15px;
+}
+
+.company-text h3 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 10px;
+}
+
+/* Секция  с фотографиями с процесса испытаний */
+.photos {
+  text-align: center;
+}
+
+.photos h2 {
+  font-size: 30px;
+  margin-bottom: 76px;
+}
+
+.photos-slider {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 73px;
+}
+
+.photos-block {
+  text-align: center;
+}
+
+.slick-slide img {
+  display: block;
+  margin: auto;
+}
+
+/*  Секция  с контактами  */
+.contacts-container {
+  position: relative;
+}
+
+.contacts-block {
+  background-color: #c60b0b;
+  text-align: center;
+  padding: 55px;
+  width: 381px;
+  font-size: 18px;
+  color: white;
+  max-height: 453px;
+  position: absolute;
+  top: -454px;
+  left: 0;
+}
+
+.contacts-block h2 {
+  margin-bottom: 40px;
+}
+
+.metro,
+.addres,
+.contacts-phone {
+  margin-bottom: 38px;
+  color: white;
+}
+
+.contacts-phone a {
+  color: white !important;
+}
+
+.mail {
+  font-size: 18px;
+  color: white;
+}
+
+/* Footer */
+footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer-logo img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  min-height: 66px;
+}
+
+.footer-logo_text {
+  text-align: left;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.footer-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+#phone {
+  font-size: 22px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.footer-phone {
+  text-align: right;
+}
+
+.adres-text {
+  font-size: 14px;
+  text-align: right;
+}
+
+.footer-text {
+  display: table;
+  width: 100%;
+  min-height: 81px;
+  text-align: center;
+}
+
+.footer-text div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Модальное окно */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  color: #0d0d0d;
+}
+
+.popup-content,
+.popup-content2 {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  background-color: #fff;
+  transform: translateX(-50%);
+  padding: 10px;
+  text-align: center;
+}
+
+.popup-content2 {
+  padding: 0px 65px;
+}
+
+.popup-close,
+.popup-close2 {
+  position: absolute;
+  top: -25px;
+  right: -20px;
+  width: 20px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #c70101;
+  font-size: 44px;
+  font-weight: bolder;
+}
+
+.popup-form {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 21px;
+  margin-bottom: 0;
+}
+
+/* Спасибо за вашу заявку! */
+
+.popup2 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  color: #0d0d0d;
+}
+
+@media (max-width: 991px) {
+  /*Секция с шапкой*/
+  .header-text_2 {
+    padding-top: 0;
+    font-size: 13px;
+  }
+
+  .header-phone {
+    font-size: 13px;
+  }
+
+  .heading-page h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    line-height: 30px;
+  }
+
+  .head {
+    text-align: center;
+  }
+
+  .heading-page_list p {
+    margin-bottom: 15px;
+    float: left;
+    width: 70%;
+    text-align: left;
+  }
+
+  .heading-page_list::before {
+    content: "";
+    position: relative;
+    margin-right: 25px;
+    background: url(../img/time.png) no-repeat center;
+    float: left;
+    width: 20%;
+    height: 20px;
+    bottom: -3px;
+    left: 80px;
+  }
+
+  .main-form {
+    margin: 50px auto;
+    padding: 25px 20px;
+    width: 70%;
+  }
+
+  /* Секция с нашими услугами */
+  .row2 {
+    margin-top: 160px;
+  }
+
+  .services-block {
+    min-height: 430px;
+  }
+
+  .services-block_img {
+    width: 200px;
+    padding: 17px 0;
+  }
+
+  .services-block_img img {
+    width: 150px;
+  }
+
+  .services-block_text {
+    min-height: 80px;
+  }
+
+  .services-block_btn {
+    width: 200px;
+    font-size: 14px;
+    padding: 10px 40px;
+  }
+
+  .services-text {
+    margin-bottom: 24px;
+  }
+
+  /* Секция с Списоком требуемых документов */
+
+  .requires-list p {
+    width: 90%;
+  }
+
+  .requires-list::before {
+    margin-right: 10px;
+    width: 5%;
+    height: 10px;
+  }
+
+  /* Секция с -  6 причин выбрать именно нас */
+  .super-wrap_block {
+    width: 70%;
+  }
+
+  .super-wrap::before {
+    margin-right: 20px;
+    width: 20%;
+    height: 40px;
+  }
+
+  /* Секция  -  Клиенты о нас */
+
+  .partners img {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .company-block {
+    text-align: center;
+  }
+
+  .company-text {
+    text-align: center;
+  }
+
+  .company {
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  /*footer*/
+  .footer-text {
+    font-size: 13px;
+  }
+
+  .footer-phone {
+    text-align: center;
+  }
+  .popup-form {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 21px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo,
+  .header-text_2,
+  .header-phone,
+  .adres-text {
+    text-align: center;
+  }
+
+  .logo,
+  .header-text_2,
+  .header-phone {
+    margin-bottom: 0px;
+  }
+
+  .logo p {
+    left: 58%;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .header-text_2 {
+    margin: 15px auto;
+    color: #666666;
+    text-align: center;
+  }
+
+  /*Секция с заголовкой и формой*/
+  .heading-page h1 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    line-height: 26px;
+  }
+
+  .head {
+    text-align: center;
+  }
+
+  .heading-page_list p {
+    margin-bottom: 10px;
+    float: left;
+    width: 60%;
+    text-align: left;
+  }
+
+  .heading-page_list::before {
+    content: "";
+    position: relative;
+    margin-right: 25px;
+    background: url(../img/time.png) no-repeat center;
+    float: left;
+    width: 30%;
+    height: 20px;
+    bottom: -3px;
+    left: 90px;
+  }
+
+  .main-form {
+    margin: 50px auto;
+    padding: 25px 20px;
+    width: 50%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  /*Секция с преимуществами*/
+  .features-block {
+    margin-bottom: 60px;
+  }
+
+  /* Секция с нашими услугами */
+  .services-block_text {
+    min-height: auto;
+  }
+
+  .row2 {
+    margin-top: 20px;
+  }
+
+  /* Секция с Списоком требуемых документов */
+  .requires-header {
+    margin-bottom: auto;
+  }
+
+  .requires h3 {
+    clear: both;
+    padding-top: 30px;
+  }
+
+  .requires-list p {
+    width: 90%;
+  }
+
+  .requires-list::before {
+    margin-right: 10px;
+    width: 5%;
+    height: 10px;
+  }
+
+  /* Секция с -  Как мы работаем */
+  .works h2 {
+    font-size: 30px;
+    margin-bottom: auto;
+  }
+
+  .works-img {
+    margin-top: 40px;
+  }
+
+  .works h3 {
+    font-size: 18px;
+    margin: 21px auto 16px;
+    font-weight: bold;
+  }
+
+  /* Секция с -  6 причин выбрать именно нас */
+  .super h2 {
+    margin-bottom: 40px;
+  }
+
+  .contacts-block {
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    max-height: 453px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
+
+  footer {
+    position: relative;
+    top: 440px;
+  }
+
+  /*footer*/
+  .footer-phone {
+    text-align: center;
+  }
+
+  .popup-form {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 21px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 544px) {
+  /*Секция с заголовкой и формой*/
+  .heading-page_list p {
+    margin-bottom: 10px;
+    float: left;
+    width: 70%;
+    text-align: left;
+  }
+
+  .heading-page_list::before {
+    content: "";
+    position: relative;
+    margin-right: 25px;
+    background: url(../img/time.png) no-repeat center;
+    float: left;
+    width: 15%;
+    height: 20px;
+    bottom: -3px;
+    left: 20px;
+  }
+
+  .main-form {
+    width: 100%;
+  }
+
+  /*Секция с преимуществами*/
+
+  /* Секция с нашими услугами */
+
+  /* Секция с Списоком требуемых документов */
+
+  /* .requires-list p {
+        width: 90%;
+    }*/
+
+  .super {
+    padding: 0px 80px;
+    text-align: center;
+  }
+
+  .super-wrap_block {
+    width: 100%;
+  }
+
+  .super-wrap {
+    text-align: center;
+  }
+
+  .super-wrap::before {
+    bottom: 0px;
+    left: 40%;
+  }
+
+  .super-wrap::before {
+    margin-right: 20px;
+    width: 31%;
+    height: 50px;
+  }
+
+  /* Секция с -  Как мы работаем */
+
+  .requires h3 {
+    padding-top: 0px;
+  }
+
+  .requires-list p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .requires-list::before {
+    margin-right: 25px;
+    width: 20%;
+    height: 20px;
+    left: 40%;
+  }
+
+  .trigger {
+    overflow: hidden;
+  }
+
+  /* Секция с -  6 причин выбрать именно нас */
+
+  .company-block {
+    text-align: center;
+  }
+
+  .company-text {
+    text-align: center;
+  }
+
+  .contacts-block {
+    width: 100%;
+    max-height: 453px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
+
+  footer {
+    position: relative;
+    top: 440px;
+  }
+
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .popup-form {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 21px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 308px) {
+  .super-wrap::before {
+    margin-right: 20px;
+    width: 45%;
+    height: 50px;
+  }
+
+  .popup-form {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 21px;
+    margin-bottom: 0;
+  }
+}
